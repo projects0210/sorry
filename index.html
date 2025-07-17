@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>I HATE U Game 🤪</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Baloo+2&display=swap" rel="stylesheet"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Baloo+2&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Intro -->
+  <div id="intro-screen">
+    <h1>Hey Anushree…</h1>
+    <p>wanna see what I made for you?</p>
+    <div class="intro-buttons">
+      <button id="yes-btn">Yes (If you hate me 😅)</button>
+      <button id="no-btn">No (Exit 😭)</button>
+    </div>
+    <div id="download-exit" style="display:none; margin-top:20px;">
+      <a href="apology-letter.txt" download class="dl-btn">Download Apology Letter </a>
+    </div>
+  </div>
+
+  <!-- Game -->
+  <main id="game-screen" style="display:none;">
+    <h3 class="mini-header">TO CEO GARU...</h3>
+    <div class="meter-container">
+         <div class="meter-bar"></div>
+         <span id="meter-count">0</span>
+    </div>
+    <p class="mid-text">CLICK BELOW...</p>
+    <canvas id="hate-gauge" width="300" height="150"></canvas>
+    <button id="hate-btn">I HATE YOU, I HATE YOU SOOO MUCH!</button>
+    <p id="reaction-text">Let’s see how much you hate me…</p>
+
+    <section id="sorry-section">
+      <label>How sorry? (words): <input type="number" id="sorry-count" min="1" max="500" value="5"></label>
+      <button id="gen-sorry-btn">Generate Apology</button>
+      <p id="sorry-msg">Make me apologize 😇</p>
+    </section>
+
+    <section id="hidden-letter" style="display:none;">
+      <h2>📝 To CEO Madam Anushree</h2>
+      <p>
+        From: Your Hate – Prem.<br><br>
+        I, the undersigned chaos-bringer… Please accept this letter instead of blocking me 🙃
+      </p>
+      <button id="forgive-btn" class="dl-btn">Forgive Me 👀</button>
+    </section>
+
+    <div class="download-letter">
+      <a href="apology-letter.txt" download class="dl-btn">📄 Download Official Apology Letter</a>
+    </div>
+
+    <footer>
+      <p>©2025c All rights reserved</p>
+    </footer>
+  </main>
+
+  <audio id="click-sfx" src="click.mp3" preload="auto"></audio>
+  <audio id="type-sfx" src="type.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
